@@ -1,0 +1,35 @@
+name: Generate TXT
+
+on:
+  push:
+    paths:
+      - 'filters.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-txt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Generate filters.txt
+        run: bash scripts/generate-txt.sh
+
+      - name: Commit generated TXT
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- filters.txt; then
+            echo "filters.txt is already up to date."
+            exit 0
+          fi
+
+          git add filters.txt
+          git commit -m "chore: regenerate filters.txt"
+          git push
