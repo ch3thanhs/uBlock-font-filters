@@ -38,7 +38,7 @@ This makes the UI and code snippets look consistent, regardless of the site's de
 
 ## Importing the filters
 
-The easiest option is to [**download the complete `filters.txt` file**](https://github.com/ch3thanhs/uBlock-Filters/raw/refs/heads/main/filters.txt) and import it directly. The file contains all filters plus `!` comments separating the site sections.
+The easiest option is to [**download the complete `filters.txt` file**](https://github.com/ch3thanhs/uBlock-font-filters/raw/refs/heads/main/filters.txt) and import it directly. The file contains all filters plus `!` comments separating the site sections.
 
 ### uBlock Origin
 
