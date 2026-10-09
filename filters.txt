@@ -10,6 +10,7 @@ github.com##:is(pre, pre *, code, code *, kbd, kbd *, samp, samp *, tt, tt *, .b
 chatgpt.com##html:style(--font-family-sans: "Inter", sans-serif !important; --font-sans: "Inter", sans-serif !important; --font-family-mono: "JetBrains Mono", monospace !important; --font-mono: "JetBrains Mono", monospace !important; --type-code-font-family: "JetBrains Mono", monospace !important; font-family: "Inter", sans-serif !important;)
 chatgpt.com##:is(body, button, input, textarea, select, option, [contenteditable="true"]):style(font-family: "Inter", sans-serif !important;)
 chatgpt.com##:is(pre, pre *, code, code *, kbd, kbd *, samp, samp *, [class*="font-mono"], [class*="font-mono"] *, .monaco-editor, .monaco-editor *, .cm-editor, .cm-editor *):style(font-family: "JetBrains Mono", monospace !important;)
+chatgpt.com##[class*="DilResponseRoot"]:style(font-family: "Inter", sans-serif !important;)
 
 
 ! Visual Studio Marketplace
